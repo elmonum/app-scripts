@@ -40,3 +40,11 @@ function calcOverwork(workhour) {
   }
   return time_list
 }
+
+//ボタンを作成
+function onOpen() {
+  var ui = SpreadsheetApp.getUi();
+  ui.createMenu('Custom Menu')
+      .addItem('残業時間を記録', 'myLog')
+      .addToUi();
+}
